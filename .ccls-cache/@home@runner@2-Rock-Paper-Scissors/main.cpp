@@ -1,5 +1,11 @@
 #include <iostream>
 
+#include "rps-interface.h"
+
 int main() {
-  std::cout << "Hello World!\n";
+  RPSInterface rpsInterface;
+  while (rpsInterface.continuePlaying()) { 
+    rpsInterface.playGame();
+  }
+  rpsInterface.goodbye();
 }
