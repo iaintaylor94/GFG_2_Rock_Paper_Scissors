@@ -1,5 +1,11 @@
 #include <iostream>
 
+#include "rps.h"
+
 int main() {
-  std::cout << "Hello World!\n";
+  RPS rps;
+  while (rps.continuePlaying()) { 
+    rps.playGame();
+  }
+  rps.goodbye();
 }
