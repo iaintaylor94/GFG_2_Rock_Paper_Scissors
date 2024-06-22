@@ -4,8 +4,9 @@
 #include <iostream>
 #include <string>
 
-class RPSInterface {
-  //bool first; // 'X' plays first
+#include "rps.h"
+
+class RPSInterface : public RPS {
 
 public:
   RPSInterface() {};

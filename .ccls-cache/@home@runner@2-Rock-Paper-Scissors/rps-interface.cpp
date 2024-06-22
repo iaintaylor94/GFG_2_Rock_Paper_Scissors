@@ -1,6 +1,6 @@
 #include "rps-interface.h"
 
-bool RPSInterface::continuePlaying() {
+bool RPS::continuePlaying() {
   while (true) {
     char answer;
     
@@ -15,10 +15,11 @@ bool RPSInterface::continuePlaying() {
   }
 }
 
-void RPSInterface::playGame() {
-  
+void RPS::playGame() {
+  bool first = getFirst();
+  startGame(first);
 }
 
-void RPSInterface::goodbye() {
+void RPS::goodbye() {
   std::cout << "Thanks for playing. Goodbye!" << std::endl;
 }

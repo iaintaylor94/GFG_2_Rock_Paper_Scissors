@@ -1,11 +1,11 @@
 #include <iostream>
 
-#include "rps-interface.h"
+#include "rps.h"
 
 int main() {
-  RPSInterface rpsInterface;
-  while (rpsInterface.continuePlaying()) { 
-    rpsInterface.playGame();
+  RPS rps;
+  while (rps.continuePlaying()) { 
+    rps.playGame();
   }
-  rpsInterface.goodbye();
+  rps.goodbye();
 }
